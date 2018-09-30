@@ -1,0 +1,25 @@
+﻿<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<div class="jumbotron"><h1 style="text-align:center">BookService</h1></div>
+<button class="btn btn-success" onclick="ModalForm()">Add Book</button>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        All books
+    </div>
+    <br />
+    <div class="panel-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Methods</th>
+                </tr>
+            </thead>
+            <tbody id="table"></tbody>
+        </table>
+    </div>
+</div>
+@{ Html.RenderPartial("Modal");}
+@{ Html.RenderPartial("Form");}
+<script src="~/Scripts/CRUDDataApi.js" > </script >
